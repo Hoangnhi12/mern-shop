@@ -1,29 +1,23 @@
 {
-  "name": "mern-shop",
+  "name": "server-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "npm run dev --prefix server",
-    "client": "npm run dev --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/likelionbootcamp3/mern-shop.git"
+    "dev": "nodemon src/index.js",
+    "prod": "node src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/likelionbootcamp3/mern-shop/issues"
-  },
-  "homepage": "https://github.com/likelionbootcamp3/mern-shop#readme",
-  "devDependencies": {
-    "concurrently": "^7.6.0",
-    "nodemon": "^2.0.20"
-  },
   "dependencies": {
-    "react-hook-form": "^7.41.1"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "sucrase": "^3.29.0"
   }
 }
